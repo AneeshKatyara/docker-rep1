@@ -1,10 +1,10 @@
-# Serve a static HTML site with Nginx
+# Use a lightweight Nginx image
 FROM nginx:alpine
 
-# Copy your site into Nginx's web root
-COPY . /usr/share/nginx/html
+# Copy your HTML file into Nginx's web root
+COPY lab4.html /usr/share/nginx/html/index.html
 
-# Expose HTTP
+# Expose HTTP port
 EXPOSE 80
 
 # Nginx default CMD already starts the server
