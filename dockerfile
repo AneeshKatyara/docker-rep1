@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy your HTML file into Nginx's web root
-COPY lab4.html /usr/share/nginx/html/lab4.html
+COPY lab4.html /usr/share/nginx/html/index.html
 
 # Expose HTTP port
 EXPOSE 80
